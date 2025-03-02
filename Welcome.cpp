@@ -13,6 +13,12 @@ void printWithDelay(const std::string& text, int delayMilliseconds) {
     std::cout << std::endl; // Add a newline at the end
 }
 
+void readArray(int arr[], int n) {
+    for (int i=0; i<n; i++) {
+        std::cin >> arr[i];
+    }
+}
+
 int main(){
     std::string message1 = "Booting";
     std::string message2 = "...";
