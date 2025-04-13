@@ -9,11 +9,11 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}\\Build\\${fileBasenameNoExtension}.exe"
             ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
+            // "options": {
+            //     "cwd": "${fileDirname}"
+            // },
             "problemMatcher": [
                 "$gcc"
             ],
@@ -32,11 +32,11 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}\\Build\\${fileBasenameNoExtension}.exe"
             ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
+            // "options": {
+            //     "cwd": "${fileDirname}"
+            // },
             "problemMatcher": [
                 "$gcc"
             ],
