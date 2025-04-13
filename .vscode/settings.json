@@ -92,4 +92,19 @@
         "valarray": "cpp",
         "variant": "cpp"
     },
+    
+    "colorMyText.configurations": [
+        {
+            "paths": ["*.txt"],
+            "rules": [
+                {"patterns": ["REMIND_TO_SELF_.*"], "color": "BrightRed", "bold": true},
+                {"patterns": ["NOTE:.*"], "color": "BrightMagenta", "bold": true},
+                {"patterns": ["// .*"], "color": "BrightGreen", "italic": true},
+                {"patterns": ["#include"], "matchCase": true, "color" :"BrightBlack" },
+                {"patterns": ["<.*>"], "color": "Magenta"},
+                {"patterns": ["std::"], "color":"Cyan"},
+                {"patterns": ["-*>"], "color": "Red"},
+            ]
+        }
+    ],
 }
