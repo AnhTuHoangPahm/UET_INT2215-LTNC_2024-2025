@@ -1,0 +1,1 @@
+Những bài còn lại trong module cũng khá dễ rồi.

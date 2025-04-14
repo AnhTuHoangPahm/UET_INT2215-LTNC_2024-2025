@@ -4,16 +4,16 @@
 class Vector {
     double x_, y_;
 public:
-    Vector(double x = 0, double y = 0);  
-    void print(int precision = 2, bool newLine = true); 
-    Vector operator+(double s) const;    
-    Vector operator-(double s) const;
-    Vector operator*(double s) const;
-    Vector operator/(double s) const;
-    Vector& operator+=(double s);    
-    Vector& operator-=(double s);
-    Vector& operator*=(double s);
-    Vector& operator/=(double s);
+Vector(double x = 0, double y = 0);  
+void print(int precision = 2, bool newLine = true); 
+Vector operator+(double s) const;    
+Vector operator-(double s) const;
+Vector operator*(double s) const;
+Vector operator/(double s) const;
+Vector& operator+=(double s);    
+Vector& operator-=(double s);
+Vector& operator*=(double s);
+Vector& operator/=(double s);
 };
 
 Vector::Vector(double x, double y) : x_(x), y_(y) {}
@@ -78,5 +78,10 @@ Vector& Vector::operator/=(double s) {
 }
 
 int main() {
-    // ur own test
+    Vector vec(6, 6);
+    Vector vec1(1, 1);
+    Vector vec2(1, 2);
+    Vector r;
+    r = vec - 1;
+    r.print();
 }
