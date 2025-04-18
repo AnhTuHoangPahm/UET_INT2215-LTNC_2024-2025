@@ -8,7 +8,7 @@ struct Node {
     Node() {}
 };
 // copy từ đây
-// suoer hard-code 
+// super hard-code 
 Node* insertHead(Node* head, int value)
 {
     Node* nHead = new Node;
