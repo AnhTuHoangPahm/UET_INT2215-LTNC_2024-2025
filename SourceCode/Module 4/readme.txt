@@ -1,1 +1,1 @@
-Những bài còn lại trong module cũng khá dễ rồi.
+Những bài còn lại dễ, trong khả năng.

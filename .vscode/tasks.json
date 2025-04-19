@@ -6,6 +6,7 @@
             "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
+                "-Werror",
                 "-g",
                 "${file}",
                 "-o",
@@ -30,6 +31,7 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
+                "-Werror",
                 "${file}",
                 "-o",
                 "${workspaceFolder}\\Build\\${fileBasenameNoExtension}.exe"
