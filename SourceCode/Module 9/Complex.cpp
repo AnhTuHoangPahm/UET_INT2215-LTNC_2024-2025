@@ -8,6 +8,7 @@ struct Complex {
     Complex add(const Complex& c1, const Complex &c2);
     int compare(const Complex& c1, const Complex &c2);
 };
+
 void print(const Complex& c) {
     if (c.b > 0 && c.b != 1) {
         std::cout << c.a << "+" << c.b << "i" << std::endl;
@@ -21,8 +22,7 @@ void print(const Complex& c) {
         }
     } else if (c.a == 0 || c.b == 0) {
         std:: cout << (c.a == 0 ? c.b : c.a) << std::endl;
-    }
-    // if (c.a == 0 && c.b == 0) 
+    } 
 }
 
 Complex add(const Complex& c1, const Complex& c2) {

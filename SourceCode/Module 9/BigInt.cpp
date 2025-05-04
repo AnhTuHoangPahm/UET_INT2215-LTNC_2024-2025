@@ -173,10 +173,10 @@ BigInt operator+(const BigInt& num, const BigInt& other)
                 return result;
             }
             result.sign = num.sign;
-            result.value = /*(result.sign == 1 ? "" : "-") + */ subtract(num.value, other.value);
+            result.value = subtract(num.value, other.value);
         } else {
             result.sign = other.sign;
-            result.value = /*(result.sign == 1 ? "" : "-") + */subtract(other.value, num.value);
+            result.value = subtract(other.value, num.value);
         }
     }
     return result;
@@ -201,7 +201,7 @@ BigInt operator-(const BigInt& num, const BigInt& other)
     BigInt result;
     if (num.sign != other.sign) {
         result.sign = num.sign;
-        result.value = /*(result.sign == 1 ? "" : "-") + */ add(num.value, other.value);
+        result.value = add(num.value, other.value);
     } else {
         if (compare(num.value, other.value)) { 
             if (num.value == other.value) {
@@ -209,10 +209,10 @@ BigInt operator-(const BigInt& num, const BigInt& other)
             }
 
             result.sign = num.sign;
-            result.value = /*(result.sign == 1 ? "" : "-") + */ subtract(num.value, other.value);
+            result.value = subtract(num.value, other.value);
         } else {
             result.sign = - other.sign;
-            result.value = /*(result.sign == 1 ? "" : "-") + */ subtract(other.value, num.value);
+            result.value = subtract(other.value, num.value);
         }
     }
     return result;
